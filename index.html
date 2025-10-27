@@ -82,17 +82,23 @@
     #dat_container {
       margin-top: 30px;
     }
+    .pnr{
+      background-color:red;
+      color:white;
+      border-radius:50px;
+      padding:10px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Search Train Timing</h2>
+    <a href="pnr.html" class="pnr"><button>PNR</button></a>
     <form id="trainForm">
       <label for="trainNumber">Train Number:</label>
       <input type="text" id="trainNumber" name="trainNumber" placeholder="Enter train number (e.g. 2265)" required />
       <div style="text-align: center; ">
         <button type="submit" style="width:120px">Search</button>
-      <a href="pnr.html" style="width:120px;"><button>PNR</button></a>
       </div>
     </form>
     <div id="dat_container"></div>
@@ -158,3 +164,4 @@
   </script>
 </body>
 </html>
+
